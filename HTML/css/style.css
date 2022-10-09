@@ -1,0 +1,109 @@
+body {
+  height: 100vh;
+  margin: 0;
+  background-image: radial-gradient(circle, #1c7fc2 0%, #009cdc 28%, #0d9ade 32%, #011844 100%);
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  
+  
+}
+
+.w-search .search {
+  width: 100%;
+  padding: 15px 10px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 22px;
+  color: inherit;
+}
+.w-search .search::-moz-placeholder {
+  color: #fff;
+}
+.w-search .search:-ms-input-placeholder {
+  color: #fff;
+}
+.w-search .search::placeholder {
+  color: #fff;
+}
+/* Image */
+.flx{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.weather-img{
+  position: absolute;
+  align-items: center;
+  top: 20%;
+  height: auto;
+  width: 170px;
+  
+}
+.weather-details {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.weather-details .w-city {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+.weather-details .w-day {
+  font-size: 30px;
+  font-weight: 300;
+  margin: 20px 0;
+}
+.weather-details .w-indicator::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-size: cover;
+  margin-right: 10px;
+}
+.weather-details .w-indicator-hum::before {
+  background-image: url(../../images/humidity.png);
+}
+.weather-details .w-indicator-prs::before {
+  background-image: url(../../images/pressure.png);
+}
+.weather-details .w-indicator-wind::before {
+  background-image: url(../../images/wind.png);
+}
+
+.w-forecast {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.w-forecast .w-item {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 25px;
+  margin: 0 10px 10px;
+  padding: 30px 5px 2px;
+  box-sizing: border-box;
+}
+.text-e{
+  text-align: end;
+}
+.w-forecast .w-icon {
+  max-width: 50%;
+}/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 600px) {
+  .weather-img {
+    position: initial;
+    align-items: center;
+    top: 20%;
+    height: auto;
+    width: 170px;
+}
+.text-e{
+  text-align: center;
+}
+}
